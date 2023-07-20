@@ -1,4 +1,4 @@
-import { Typography , Box, Tabs, Tab} from '@mui/material'
+import { Typography , Box, Tabs, Tab, Stack} from '@mui/material'
 import React from 'react' ; 
 import {SupplemenstList} from '../utils/SupplementsList' ; 
 import { ProductCard } from './ProductCard';
@@ -20,6 +20,8 @@ export const Supplements = ({products , addProducts}) => {
      sx={{textAlign:"center"}}
      pt = '8rem'
      pb = '1rem' 
+     id='Supplements'
+     
    >
     <Typography fontWeight='700' fontSize='2.25rem' lineHeight="2.5rem" >Gym Supplements</Typography>
     <Typography fontSize="1.25rem" lineHeight="1.75rem" >Discover the best products for all you needs</Typography>
@@ -33,7 +35,7 @@ export const Supplements = ({products , addProducts}) => {
     <Adds />
    </Box>
 
-  <Tabs
+<Tabs
       value={value}
       onChange={handleChange}
       variant="scrollable"
@@ -49,17 +51,29 @@ export const Supplements = ({products , addProducts}) => {
        <Tab label="Item Six" />
        <Tab label="Item Seven" />
 </Tabs>
+
+<div className="boxes">
+            <div className="box">DELIVERY 30&nbsp;$</div>
+            <div className="box">PROMOTION&nbsp;& products</div>
+            <div className="box">SHIPPED THE SAME DAY</div>
+</div>
  
 
-   <Box id = 'Supplements' mt='0px'>  
+   <Stack  
+      mt='100px'
+      direction="row"
+      flexWrap="wrap"
+      sx={{ gap :{lg:'110px' , xs:'52px'} }}
+      justifyContent="center"
+   >  
 
       {
         SupplemenstList.map((product) => (
-          <ProductCard product= {product}/>
+          <ProductCard product= {product} addProducts={addProducts}/>
         ))
       }
 
-   </Box>
+   </Stack>
    </>
   )
 }

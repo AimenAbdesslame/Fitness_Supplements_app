@@ -10,6 +10,7 @@ import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
 import Snackbar from '@mui/material/Snackbar';
 import Slide from '@mui/material/Slide';
+import DrawerMui from '../components/DrawerMui';
 
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -32,6 +33,7 @@ function TransitionUp(props) {
      const [bodypart, setBodypart] = useState('all') ; 
      const [products , setProducts] = useState([]) ; 
      const [open , setOpen] = useState(false) ; // for the toast (the shop toast) ; 
+     const [isDrawerOpen , setIsDrawerOpen] = useState(false) ; 
 
 
      const handleClick = () => {
@@ -64,14 +66,16 @@ function TransitionUp(props) {
      width= "100vw"
      border = "1px solid transparent"
     >
-       <IconButton size= 'large' sx = {{color:"black"  , position : 'absolute' , top : '-95px' , right: {md:'15px' , xs:'55px'} }} >
+       <IconButton size= 'large' sx = {{color:"black"  , position : 'absolute' , top : '-95px' , right: {md:'15px' , xs:'55px'} }} 
+         onClick = {() => {setIsDrawerOpen(true)}}
+       >
           <StyledBadge badgeContent={products.length } color="secondary">
              <ShoppingCartIcon />
           </StyledBadge>
        </IconButton>
       <HeroBanner      />
       <SearchExercises 
-          setExercises={setExercises}
+          setExercises={setExercises}Footer
           bodypart={bodypart}
           setBodypart={setBodypart}
       />
@@ -102,8 +106,12 @@ function TransitionUp(props) {
             </IconButton>
             </>
         )}
+        onClick = {() =>  {window.scrollTo({top:0 , left : 0  , behavior:'smooth' }) ; setIsDrawerOpen(true)} }
+        sx={{backgroundColor:'black'}}
       />
+      <DrawerMui isDrawerOpen={isDrawerOpen} setIsDrawerOpen = {setIsDrawerOpen} products={products}  setProducts = {setProducts}/>
       </Box>
+      
 
     
   )

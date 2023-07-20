@@ -36,15 +36,15 @@ const Images = [
 
 
 export const  SupplemenstList = [
-    {id : 1 ,name: 'Monohydrate', price : '100$'  ,desc  : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'3' ,  src: Images[7]  , Rationg : 1} ,  
-    {id : 2 ,name: 'Glutamine', price : '70$'     ,desc  : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'0' ,  src: Images[5]  , Rationg : 2} , 
-    {id : 3 ,name: 'Buffered', price : '70$'      ,desc  : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'177' ,src: Images[1]  , Rationg : 3} , 
-    {id : 4 ,name: 'Monohydrate', price : '50$'   ,desc  : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'41' , src: Images[8]  , Rationg : 4} , 
-    {id : 5 ,name: 'Ethyl Ester', price : '50$'   , desc : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'55' , src: Images[2]  , Rationg : 2} , 
-    {id : 6 ,name: 'Buffered', price : '30$'      , desc : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'47' , src: Images[0]  , Rationg : 4} , 
-    {id : 7 ,name: 'Liquid ', price : '30$'       , desc : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'10' , src: Images[6]  , Rationg : 3} , 
-    {id : 8 ,name: 'Glutamine', price : '10$'     , desc : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'0' ,  src: Images[4]  , Rationg : 2} , 
-    {id : 9 ,name: 'Glutamine', price : '10$'     , desc : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'1' ,  src: Images[3]  , Rationg : 1} , 
+    {id : 1 ,name: 'Monohydrate', price : '100$'  ,desc  : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'3' ,  src: Images[7]  , Rating : 1.5} ,  
+    {id : 2 ,name: 'Glutamine', price : '70$'     ,desc  : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'0' ,  src: Images[5]  , Rating : 2.5} , 
+    {id : 3 ,name: 'Buffered', price : '70$'      ,desc  : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'177' ,src: Images[1]  , Rating : 3} , 
+    {id : 4 ,name: 'Monohydrate', price : '50$'   ,desc  : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'41' , src: Images[8]  , Rating : 4} , 
+    {id : 5 ,name: 'Ethyl Ester', price : '50$'   , desc : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'55' , src: Images[2]  , Rating : 2} , 
+    {id : 6 ,name: 'Buffered', price : '30$'      , desc : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'47' , src: Images[0]  , Rating : 4} , 
+    {id : 7 ,name: 'Liquid ', price : '30$'       , desc : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'10' , src: Images[6]  , Rating : 3} , 
+    {id : 8 ,name: 'Glutamine', price : '10$'     , desc : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'0' ,  src: Images[4]  , Rating : 2.5} , 
+    {id : 9 ,name: 'Glutamine', price : '10$'     , desc : 'The most widely studied form of creatine, known for its effectiveness in improving strength, power, and muscle mass.' , contity:'1' ,  src: Images[3]  , Rating : 1} , 
 ]
 
 export const Add = [
