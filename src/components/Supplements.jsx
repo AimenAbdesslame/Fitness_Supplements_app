@@ -69,7 +69,7 @@ export const Supplements = ({products , addProducts}) => {
 
       {
         SupplemenstList.map((product) => (
-          <ProductCard product= {product} addProducts={addProducts}/>
+          <ProductCard products={products}  product= {product} addProducts={addProducts}/>
         ))
       }
 

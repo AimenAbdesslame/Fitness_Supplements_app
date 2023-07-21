@@ -1,8 +1,8 @@
 import React , {useState}from 'react'
 import Rating from '@mui/material/Rating';
 
-export const ProductCard = ({product , addProducts}) => {
-  const [isadded , setIsadded] = useState(false)  ;
+export const ProductCard = ({ products ,product , addProducts}) => {
+  const isIn = products.includes(product) ;
   return (
     <>
     <div className="card">
@@ -11,9 +11,9 @@ export const ProductCard = ({product , addProducts}) => {
          <div className="footer-card">
          <div className="prix"><b>{product.price}&nbsp;$</b></div>
          <Rating name="half-rating-read" defaultValue={product.Rating} precision={0.5} readOnly sx={{px:'10px'}} />
-         <button onClick={() => {addProducts(product) ; setIsadded(true)}}>
+         <button onClick={() => {addProducts(product)}}>
              {
-              isadded  ? 'Added' : 'Add to cart' 
+              (isIn)  ? 'Added' : 'Add to cart' 
              }
          </button>
     </div>
